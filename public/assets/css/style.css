@@ -1,0 +1,513 @@
+:root {
+  --primary: #90ff90;
+  --secondary: #363636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*mainheading*/
+
+.mainheading{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+
+.mainheading::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: var(--secondary);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleY(1.5);
+  border: 2px solid whitesmoke;
+}
+
+.mainheading .headingcontent{
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.mainheading .headingcontent h2{
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  font-size: 64px;
+}
+
+.mainheading .headingcontent p{
+  color: whitesmoke;
+  font-size: 32px;
+}
+
+.headerwork{
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-size: 50px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  background-color: black;
+  border-top: 2px solid whitesmoke;
+}
+
+/*font awesome*/
+.fa {
+  color: whitesmoke;
+  background-color: #363636;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+}
+.fa:hover {
+  background-color: black;
+}
+.fa:active {
+  transition: 0.01s;
+  background-color: black;
+  box-shadow: 0 5px whitesmoke;
+  transform: translateY(4px);
+}
+
+/* about us */
+.aboutus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: black;
+}
+.aboutuscontainer{
+  position: relative;
+  min-height: 70vh;
+  max-width: 1380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:black;
+}
+.aboutuscontainer .aboutuscard{
+  position: relative;
+  max-width: 600px;
+  background:  #363636;
+  display: flex;
+  margin: 20px;
+  border: 2px solid whitesmoke;
+}
+.aboutuscontainer .aboutuscard .aboutuscontent{
+  text-align: justify;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.aboutuscontainer .aboutuscard .aboutuscontent p{
+  color: whitesmoke;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.aboutuscontainer .aboutuscard .aboutuscontent h1{
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+}
+.aboutuscontainer .aboutuscard .aboutuscontent .fa{
+  font-size: 30px;
+  width: 30px;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.aboutuscontainer .aboutuscard .aboutuscontent .fa:active {
+  box-shadow: 0 5px whitesmoke;
+}
+
+/*our aim*/
+.ouraim{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.ouraim h1{
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  background: black;
+  padding-top: 20px;
+}
+
+.timeline-section{
+	background-color: black;
+	min-height: 60vh;
+	padding: 100px 50px;
+}
+.timeline-items{
+	max-width: 900px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #363636;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #363636;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-content{
+  background-color: #363636;
+	padding: 30px;
+	border-radius: 5px;
+  border: 2px solid whitesmoke;
+}
+
+.timeline-content p{
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: justify;
+}
+
+/*secondwork*/
+.work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: black;
+}
+
+.workcontainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1260px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.workcontainer .workcard{
+  position: relative;
+  width: 280px;
+  margin: 20px;
+  padding: 20px;
+  background: var(--secondary);
+  border: 2px solid whitesmoke;
+}
+
+.workcontainer .workcard .workimage{
+  margin-bottom: 10px;
+}
+
+.workcontainer .workcard .workimage img{
+  max-width: 280px;
+}
+
+.workcontainer .workcard .workcontent{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.workcontainer .workcard .workcontent h2{
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.workcontainer .workcard .workcontent p{
+  color: whitesmoke;
+  text-align: justify;
+}
+
+.workcontainer .workcard .workcontent::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  background: linear-gradient(transparent,#363636);
+}
+
+.workcontainer .workcard.active .workcontent::before{
+  display: none;
+  }
+
+.workcontainer .workcard.active .workcontent{
+  height: auto;
+  }
+
+  .workcontainer .workcard .more::before{
+    content: 'READ MORE';
+  }
+  
+  .workcontainer .workcard.active .more::before{
+    content: 'READ LESS';
+  }  
+
+  .workcontainer .workcard .more{
+    position: relative;
+    padding: 5px;
+    margin-top: 20px;
+    background: var(--secondary);
+    display: inline-block;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    width: 125px;
+    box-shadow: inset 0 0 0 0 whitesmoke;
+    transition: ease-out 0.3ms;
+    text-align: center;
+  }
+
+  .workcontainer .workcard .more:hover{
+    box-shadow: inset 150px 0 0 0 whitesmoke;
+    color: var(--secondary);
+  }
+
+.workcontainer .workcard.active .more{
+  background: var(--secondary);
+  color: whitesmoke;
+}
+
+.workcontainer .workcard.active .more:hover{
+  box-shadow: inset 150px 0 0 0 whitesmoke;
+  color: var(--secondary);
+}
+
+
+/*team members*/
+.team-section {
+  padding: 10px;
+  min-height: 40vh;
+  background-color: black;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.team {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  border: 4px solid whitesmoke;
+  border-radius: 16px;
+  position: relative;
+  background-color: var(--secondary);
+  margin: 15px;
+}
+.team img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 200px;
+  border-radius: 16px;
+  z-index: 3;
+  object-fit: cover;
+  border: none;
+}
+.team:hover img {
+  width: 0;
+  height: 0;
+}
+.team .info {
+  background-color: var(--secondary);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+  z-index: 2;
+}
+.team .name {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 25px;
+  text-transform: capitalize;
+}
+.team .branch {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.team .social {
+  display: inline-block;
+  padding-block: 10px;
+}
+
+@media screen and (max-width: 1100px){
+
+/*aboutus*/
+  .aboutuscontainer{
+    flex-direction: column;
+  }
+  .aboutuscontainer .aboutuscard{
+    max-width: 400px;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+  
+
+
+
+
+
+
+  .mainheading .headingcontent h2{
+    font-size: 32px;
+  }
+  
+  .mainheading .headingcontent p{
+    font-size: 16px;
+  }
+
+  .mainheading{
+    height: 50vh;
+  }
+
+  .mainheading::before{
+    height: 80%;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+    border: 2px solid whitesmoke;
+  }
+
+  .headerwork{
+    font-size: 40px;
+  }
+
+/*about us*/
+  .aboutuscontainer .aboutuscard{
+    max-width: 350px;
+    flex-direction: column;
+  }
+  .aboutuscontainer .aboutuscard .aboutuscontent p{
+    font-size: 18px;
+  }
+  .aboutuscontainer .aboutuscard .aboutuscontent{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+/*our aim*/
+  .timeline-items::before{
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 37px;
+  }
+  .timeline-dot{
+    left:0;
+  }
+
+/*our works
+  .container{
+    flex-direction: column;
+  }
+  .container .card{
+    max-width: 350px;
+    flex-direction: column;
+  }
+  .container .card .imgbox{
+    max-width: 100%;
+  }
+  .container .card .content{
+    margin: 5px;
+  }*/
+
+/*our team*/  
+  .team{
+    height: 150px;
+    width: 120px;
+margin: 10px;
+  }
+  .team img{
+    height: 150px;
+    width: 120px;
+  }
+  .team .name {
+    font-size: 12px;
+    padding-top: 20px;  
+  }
+  .team .branch {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .fa{
+    font-size: 12px;
+    width: 12px;
+    padding: 10px;
+  }
+
+}
+
